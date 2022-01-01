@@ -14,7 +14,14 @@ jobs:
     runs-on: 'ubuntu-latest'
     steps:
       - uses: 'actions/checkout@v2'
-      - uses: './hadolint'
+      - name: 'Checkout GitHub actions repo'
+        uses: 'actions/checkout@v2'
+        with:
+          repository: 'sharksRus/github-actions'
+          path: '.github/actions'
+          ref: 'main'
+      - name: 'running hadolint'
+        uses: './.github/actions/hadolint'
         with:
           args: '*/Dockerfile'
 

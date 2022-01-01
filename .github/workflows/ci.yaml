@@ -22,8 +22,6 @@ jobs:
           ref: 'main'
       - name: 'running hadolint'
         uses: './.github/actions/hadolint'
-        with:
-          args: '**/Dockerfile'
 
   yamllint:
     name: 'yamllint'

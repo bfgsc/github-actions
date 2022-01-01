@@ -23,7 +23,7 @@ jobs:
       - name: 'running hadolint'
         uses: './.github/actions/hadolint'
         with:
-          args: '*/Dockerfile'
+          args: '**/Dockerfile'
 
   yamllint:
     name: 'yamllint'

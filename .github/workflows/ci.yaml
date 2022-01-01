@@ -1,0 +1,33 @@
+---
+name: 'ci'
+
+on:
+  push:
+    branches:
+      - 'main'
+  pull_request:
+    branches:
+      - '*'
+jobs:
+  hadolint:
+    name: 'hadolint'
+    runs-on: 'ubuntu-latest'
+    steps:
+      - uses: 'actions/checkout@v2'
+      - uses: './hadolint'
+        with:
+          args: '*/Dockerfile'
+
+  yamllint:
+    name: 'yamllint'
+    runs-on: 'ubuntu-latest'
+    steps:
+      - uses: 'actions/checkout@v2'
+      - name: 'Checkout GitHub actions repo'
+        uses: 'actions/checkout@v2'
+        with:
+          repository: 'sharksRus/github-actions'
+          path: '.github/actions'
+          ref: 'main'
+      - name: 'running yamllint'
+        uses: './.github/actions/yamllint'

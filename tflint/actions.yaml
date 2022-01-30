@@ -1,0 +1,6 @@
+---
+name: 'tflint-action'
+description: 'GitHub Action for tflint'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

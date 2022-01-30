@@ -1,0 +1,10 @@
+---
+name: 'tfsec'
+description: 'Runs tfsec on specified code'
+inputs:
+  excludes:
+    description: 'Comma-delimited list of checks to ignore when running'
+    required: 'false'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

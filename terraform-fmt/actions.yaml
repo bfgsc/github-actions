@@ -1,0 +1,6 @@
+---
+name: 'terraform-fmt-action'
+description: 'GitHub Action for terrsform formatting'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

@@ -1,4 +1,4 @@
-FROM python:3.10-alpine
+FROM python:3.10.4-alpine
 
 COPY yamllint.json /yamllint.json
 COPY entrypoint.sh /entrypoint.sh

@@ -1,7 +1,7 @@
-FROM public.ecr.aws/docker/library/alpine:3.15.0
+FROM public.ecr.aws/docker/library/alpine:3.16.1
 LABEL maintainer="Glen Stummer <glen@glen.dev>"
 
-ENV TFSEC_VERSION=0.63.1
+ENV TFSEC_VERSION=1.26.3
 
 SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
 COPY entrypoint.sh /entrypoint.sh

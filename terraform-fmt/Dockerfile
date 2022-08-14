@@ -1,8 +1,8 @@
-FROM public.ecr.aws/docker/library/alpine:3.16.1
+FROM public.ecr.aws/docker/library/alpine:3.16.2
 LABEL maintainer="Glen Stummer <glen@glen.dev>"
 
-ENV TERRAFORM_VERSION=1.2.5
-ENV TERRAFORM_SHA256SUM=281344ed7e2b49b3d6af300b1fe310beed8778c56f3563c4d60e5541c0978f1b
+ENV TERRAFORM_VERSION=1.2.7
+ENV TERRAFORM_SHA256SUM=dfd7c44a5b6832d62860a01095a15b53616fb3ea4441ab89542f9364e3fca718
 
 COPY entrypoint.sh /entrypoint.sh
 

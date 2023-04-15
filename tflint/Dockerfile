@@ -1,4 +1,4 @@
-FROM public.ecr.aws/docker/library/alpine:3.16.2
+FROM public.ecr.aws/docker/library/alpine:3.17.3
 LABEL maintainer="Glen Stummer <glen@glen.dev>"
 
 SHELL ["/bin/ash", "-eo", "pipefail", "-c"]

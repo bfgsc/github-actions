@@ -18,4 +18,4 @@ RUN addgroup -S shark -g 1000 && adduser -S shark -u 1000 -G shark &&\
 
 USER shark
 ENTRYPOINT ["/usr/local/bin/tflint"]
-CMD ["."]
+CMD ["--chdir=."]

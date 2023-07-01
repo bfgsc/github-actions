@@ -1,4 +1,4 @@
-FROM python:3.11.3-alpine3.17
+FROM public.ecr.aws/docker/library/python:3.11-alpine3.18
 
 COPY yamllint.json /yamllint.json
 COPY entrypoint.sh /entrypoint.sh

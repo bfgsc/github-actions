@@ -1,4 +1,4 @@
-FROM public.ecr.aws/docker/library/alpine:3.17.3
+FROM public.ecr.aws/docker/library/alpine:3.18.2
 LABEL maintainer="Glen Stummer <glen@glen.dev>"
 
 ENV TFSEC_VERSION=1.28.1

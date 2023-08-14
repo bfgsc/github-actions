@@ -1,0 +1,10 @@
+---
+name: 'kustomize'
+description: 'Runs kustomize on specified manifests'
+inputs:
+  excludes:
+    description: 'Comma-delimited list of checks to ignore when running'
+    required: 'false'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
